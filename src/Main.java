@@ -13,7 +13,6 @@ public class Main {
             System.out.println("Primeiro valor: ");
             if (input.hasNextDouble()) {
                 valor1 = input.nextDouble();
-                input.nextLine();
                 valorValido = true;
             } else {
                 input.nextLine();
@@ -27,8 +26,6 @@ public class Main {
             System.out.println("Segundo valor: ");
             if (input.hasNextDouble()) {
                 valor2 = input.nextDouble();
-                input.nextLine();
-                valorValido = true;
             } else {
                 input.nextLine();
                 System.out.println("ERRO: Segundo valor invalido.");
