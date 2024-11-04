@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -31,32 +30,32 @@ public class Main {
                 System.out.println("ERRO: Segundo valor invalido.");
             }
         }
-            valorValido = false;
+        valorValido = false;
 
-            while (!valorValido) {
-                System.out.println("Operador (+)(-)(/)(*): ");
-                String operacao = input.nextLine();
+        while (!valorValido) {
+            System.out.println("Operador (+)(-)(/)(*): ");
+            String operacao = input.nextLine();
 
-                switch (operacao) {
-                    case "+":
-                        System.out.println("Resultado: " + (valor1 + valor2));
-                        valorValido = true;
-                        break;
-                    case "-":
-                        System.out.println("Resultado: " + (valor1 - valor2));
-                        valorValido = true;
-                        break;
-                    case "/":
-                        System.out.println("Resultado: " + (valor1 / valor2));
-                        valorValido = true;
-                        break;
-                    case "*":
-                        System.out.println("Resultado: " + (valor1 * valor2));
-                        valorValido = true;
-                        break;
-                    default:
-                        System.out.println("ERRO: Operador invalido.");
-                }
+            switch (operacao) {
+                case "+":
+                    System.out.println("Resultado: " + (valor1 + valor2));
+                    valorValido = true;
+                    break;
+                case "-":
+                    System.out.println("Resultado: " + (valor1 - valor2));
+                    valorValido = true;
+                    break;
+                case "/":
+                    System.out.println("Resultado: " + (valor1 / valor2));
+                    valorValido = true;
+                    break;
+                case "*":
+                    System.out.println("Resultado: " + (valor1 * valor2));
+                    valorValido = true;
+                    break;
+                default:
+                    System.out.println("ERRO: Operador invalido.");
             }
         }
     }
+}
